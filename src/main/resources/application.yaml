@@ -1,0 +1,15 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: config-service
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:AndreyIgnatev/ConfigServerLab.git
+          username: ignatevmailwork@gmail.com
+          password: KKnD1945$
+          default-label: main
+          search-paths: "{application}"

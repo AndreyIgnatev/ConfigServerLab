@@ -4,11 +4,15 @@ server:
 spring:
   application:
     name: config-service
+  autoconfigure:
+    exclude:
+      - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+      - org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration
   cloud:
     config:
       server:
         git:
-          uri: git@github.com:AndreyIgnatev/ConfigServerLab.git
+          uri: https://github.com/AndreyIgnatev/ConfigServerLab.git
           username: ignatevmailwork@gmail.com
           password: KKnD1945$
           default-label: main

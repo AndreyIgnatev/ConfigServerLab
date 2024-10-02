@@ -11,7 +11,7 @@ spring:
     config:
       server:
         git:
-          uri:
+          uri: https://github.com/AndreyIgnatev/ConfigServerLab.git
           username: ignatevmailwork@gmail.com
           password: KKnD1945$
           default-label: main

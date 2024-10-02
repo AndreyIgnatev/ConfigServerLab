@@ -1,6 +1,5 @@
 server:
   port: 8888
-
 spring:
   application:
     name: config-service
@@ -12,8 +11,14 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/AndreyIgnatev/ConfigServerLab.git
+          uri:
           username: ignatevmailwork@gmail.com
           password: KKnD1945$
           default-label: main
           search-paths: "{application}"
+  datasource:
+    driver-class-name: org.postgresql.Driver
+  properties:
+    DB_URL: jdbc:postgresql://db:5432/postgres
+    DB_USER: pavel
+    DB_PASSWORD: password

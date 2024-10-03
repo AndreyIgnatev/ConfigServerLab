@@ -1,5 +1,6 @@
 server:
   port: 8888
+
 spring:
   application:
     name: config-service
@@ -16,14 +17,3 @@ spring:
           password: KKnD1945$
           default-label: main
           search-paths: "{application}"
-  datasource:
-    url: ${DB_URL}
-    username: ${DB_USER}
-    password: ${DB_PASSWORD}
-    driver-class-name: org.postgresql.Driver
-  properties:
-    DB_URL: jdbc:postgresql://db:5432/postgres
-    DB_USER: pavel
-    DB_PASSWORD: password
-  dependencies:
-    - org.postgresql:postgresql:42.3.3

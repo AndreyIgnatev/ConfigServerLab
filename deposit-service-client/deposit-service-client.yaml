@@ -14,9 +14,19 @@ spring:
 eureka:
   client:
     service-url:
-      defaultZone: http://127.0.0.1:8761/eureka/
-    register-with-eureka: true
+      defaultZone: http://192.168.31.104:8761/eureka/  # Используем IP хост-машины
+    register-with-eureka: false  # Если не нужно регистрировать этот сервис в Eureka
     fetch-registry: true
 
 server:
   port: 8192
+
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://127.0.0.1:8761/eureka/
+#    register-with-eureka: true
+#    fetch-registry: true
+#
+#server:
+#  port: 8192
